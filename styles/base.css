@@ -103,7 +103,7 @@ main {
     text-align: center;
     margin-top: 15px;
     position: relative;
-    padding-bottom:#b2beb5;
+    padding-bottom:1px;
 }
 
 #flag_heading::after {
