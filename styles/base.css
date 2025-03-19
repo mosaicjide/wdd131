@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
-@import url('https://fonts.gstatic.com');
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -104,7 +103,7 @@ main {
     text-align: center;
     margin-top: 15px;
     position: relative;
-    padding-bottom: ;#b2beb5
+    padding-bottom: ;#b2beb5;
 }
 
 #flag_heading::after {
