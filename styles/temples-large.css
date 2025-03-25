@@ -8,6 +8,17 @@
         padding: 15px 50px;
     }
 
+    
+    .nav-links a:hover {
+        background-color: #6a0dad;
+        color: #ffd700;
+        text-decoration: underline;
+        border-radius: 5px;
+        padding: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+	
+
     .menu-toggle {
         display: none;
     }
