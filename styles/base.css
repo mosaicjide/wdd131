@@ -9,7 +9,7 @@ body {
 
 
 header {
-    background-color: #1c3d5a;
+    background-color: #3C5291;
     color: #fff;
     padding: 0;
     text-align: center;
@@ -60,7 +60,7 @@ main {
 
 .card h2,
 .card1 h2 {
-    background-color: #1c3d5a; 
+    background-color: #3C5291; 
     color: white; 
     text-align: center;
     border-top-left-radius:8px;
@@ -146,7 +146,7 @@ figcaption {
 
 /* Footer */
 footer {
-    background-color: #1c3d5a;
+    background-color: #3C5291;
     color: white;
     text-align: center;
     padding: 15px 0;
