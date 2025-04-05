@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Information and weather about Nigeria">
+  <meta name="author" content="Moses Babajide">
+  <title>Nigeria</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Nigeria</h1>
+  </header>
+
+  <main>
+    <picture>
+      <source media="(min-width: 768px)" srcset="images/kangaroos-large.webp" type="image/webp">
+      <img src="images/kangaroos-small.webp" alt="Kangaroos of Nigeria" class="hero-image">
+    </picture>
+
+    <section class="data">
+      <h2>Data</h2>
+      <p><span class="label">Area:</span> <span class="value">923,768 sq km</span></p>
+      <p><span class="label">Population:</span> <span class="value">240,000,000</span></p>
+      <p><span class="label">Capital:</span> <span class="value">Abuja</span></p>
+      <p><span class="label">Languages:</span> <span class="value">British English, Pidgin English</span></p>
+      <p><span class="label">Currency:</span> <span class="value">Nigerian Naira</span></p>
+      <p><span class="label">Time Zone:</span> <span class="value">UTC+1</span></p>
+      <p><span class="label">Calling Code:</span> <span class="value">+234</span></p>
+      <p><span class="label">Internet TLD:</span> <span class="value">.ng</span></p>
+    </section>
+
+    <section class="weather">
+      <h2>Weather <span class="weather-icon"></span></h2>
+      <img src="images/weather-icon.svg" alt="Partly cloudy icon" class="weather-icon-mobile">
+      <p><span class="label">Temperature:</span> <span class="value" id="temperature">10</span> °C</p>
+      <p><span class="label">Wind Speed:</span> <span class="value" id="windSpeed">5</span> km/h</p>
+      <p><span class="label">Wind Chill:</span> <span class="value" id="windChill">N/A</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> 🌸 Moses Babajide 🌸 Nigeria</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
+
