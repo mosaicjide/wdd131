@@ -1,3 +1,13 @@
+
+:root {
+  --primary-color: #c8102e;
+  --accent-color: #0a6430;
+  --card-bg: rgba(255, 255, 255, 0.95);
+  --text-color: #333;
+  --box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,14 +15,15 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   background-color: #fff;
-  color: #333;
+  color: var(--text-color);
 }
 
+
 header {
-  background-color: #c8102e;
+  background-color: var(--primary-color);
   color: white;
   text-align: center;
   padding: 1rem 0;
@@ -32,16 +43,17 @@ main {
   padding: 1rem;
 }
 
-.data, .weather {
-  background-color: rgba(255, 255, 255, 0.9);
+.data,
+.weather {
+  background-color: var(--card-bg);
   padding: 1rem;
   margin: 1rem 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
 }
 
 h2 {
-  background-color: #0a6430;
+  background-color: var(--accent-color);
   color: white;
   padding: 0.5rem;
   margin-bottom: 1rem;
@@ -52,7 +64,7 @@ h2 {
 }
 
 footer {
-  background-color: #c8102e;
+  background-color: var(--primary-color);
   color: white;
   text-align: center;
   padding: 1rem 0;
@@ -60,7 +72,6 @@ footer {
   margin-top: 2rem;
 }
 
-/* Desktop Layout */
 @media (min-width: 768px) {
   main {
     position: relative;
@@ -73,10 +84,10 @@ footer {
     height: auto;
   }
 
-  .data, .weather {
+  .data,
+  .weather {
     position: absolute;
     width: 300px;
-    background-color: rgba(255, 255, 255, 0.95);
   }
 
   .data {
@@ -100,6 +111,7 @@ footer {
   }
 }
 
+
 @media (max-width: 767px) {
   .weather-icon {
     display: none;
@@ -111,3 +123,4 @@ footer {
     margin: 0 auto 1rem;
   }
 }
+
