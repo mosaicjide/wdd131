@@ -1,0 +1,23 @@
+@media screen and (min-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .nav-links {
+    position: static;
+    display: flex !important;
+    flex-direction: row;
+    background: none;
+    width: auto;
+  }
+
+  .nav-links li {
+    border: none;
+    padding: 0 15px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+
