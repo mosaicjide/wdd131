@@ -52,6 +52,31 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
+  {
+    templeName: "Manila Philippines Temple",
+    location: "Manila City, Philippines",
+    dedicated: new Date("1982-08-25"),
+    area: 26683,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/_temp/029-Manila-Philippines-Temple.jpg"
+  },
+  {
+    templeName: "Adelaide Australia Temple",
+    location: "Adelaide, Australia",
+    dedicated: new Date("1999-05-29"),
+    area: 10700,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/adelaide-australia-temple/adelaide-australia-temple-4359-main.jpgi"
+  },
+  {
+    templeName: "Vancouver British Columbia Temple",
+    location: "Vancouver, British Columbia, Canada",
+    dedicated: new Date("2007-08-04"),
+    area: 28165,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/vancouver-british-columbia-temple/vancouver-british-columbia-temple-13064-main.jpg"
+  },
+
 ];
 
 const displayTemples = (templesList) => {
