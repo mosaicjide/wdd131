@@ -66,7 +66,7 @@ const temples = [
     dedicated: new Date("1999-05-29"),
     area: 10700,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/adelaide-australia-temple/adelaide-australia-temple-4359-main.jpgi"
+    "https://churchofjesuschristtemples.org/assets/img/temples/adelaide-australia-temple/adelaide-australia-temple-4359-main.jpg"
   },
   {
     templeName: "Vancouver British Columbia Temple",
