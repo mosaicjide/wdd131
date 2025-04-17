@@ -1,0 +1,32 @@
+/* siteplan.css */
+:root {
+  --primary-color: #2a9d8f;
+  --secondary-color: #264653;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #1a1a1a;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: var(--primary-color);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.wireframe {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.wireframe img {
+  max-width: 300px;
+  border: 1px solid #ccc;
+}
