@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Product Review</title>
   <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/script.js"></script>
+  <script src="scripts/script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
 </head>
 <body>
   <main>
@@ -30,9 +34,11 @@
 
       <fieldset>
         <legend>Useful Features (Check all that apply)</legend>
-        <label><input type="checkbox" id="feature1" name="features" value="speed"> Speed</label>
-        <label><input type="checkbox" id="feature2" name="features" value="efficiency"> Efficiency</label>
-        <label><input type="checkbox" id="feature3" name="features" value="durability"> Durability</label>
+        <label><input type="checkbox" id="feature1" name="features" value="durability"> Durability</label>
+        <label><input type="checkbox" id="feature2" name="features" value="ease-of-use"> Ease of Use</label>
+        <label><input type="checkbox" id="feature3" name="features" value="performance"> Performance</label>
+	<label><input type="checkbox" id="feature4" name="features" value="design"> Design</label>
+
       </fieldset>
 
       <label for="review">Written Review</label>
@@ -41,13 +47,14 @@
       <label for="userName">Your Name</label>
       <input type="text" id="userName" name="userName">
 
-      <input type="submit" value="Submit Review">
+      <input type="submit" value="Submit">
     </form>
   </main>
   <footer>
-    <p>&copy; <span id="year"></span> 🌸 Moses Babajide 🌸 Nigeria</p>
-    <p>Last Modification: <span id="lastModified"></span></p>
+    <p>© <span id="copyright-year"></span> 🌸 Moses Babajide 🌸 Lagos, Nigeria</p>
+	<p id="last-modified"></p>
   </footer>
 </body>
 </html>
+  <script src="scripts/getdates.js" defer></script>
 
