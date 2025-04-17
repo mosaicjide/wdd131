@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Review Confirmation</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <main>
+    <h1>Thank you for your review!</h1>
+    <p>Your review has been submitted successfully.</p>
+    <p>Total Reviews Submitted: <span id="reviewCount"></span></p>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> 🌸 Moses Babajide 🌸 Nigeria</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+  <script>
+  // Increment review count
+  const counter = localStorage.getItem("reviewCount") || 0;
+  const newCount = parseInt(counter) + 1;
+  localStorage.setItem("reviewCount", newCount);
+  document.getElementById("reviewCount").textContent = newCount;
+
+  // Get query params from URL
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+
+  // Example: Display form results in console or DOM
+  console.log("Product Name:", urlParams.get("productName"));
+  console.log("Rating:", urlParams.get("rating"));
+  console.log("Install Date:", urlParams.get("installDate"));
+  console.log("Features:", urlParams.getAll("features")); // multiple checkboxes
+  console.log("Review Text:", urlParams.get("review"));
+  console.log("User Name:", urlParams.get("userName"));
+</script>
+
+</body>
+</html>
+
